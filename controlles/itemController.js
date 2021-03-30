@@ -66,6 +66,7 @@ class ItemController {
       where: { id },
       include: [{ model: ItemInfo, as: "info" }],
     });
+    return res.json(item);
   }
 }
 
