@@ -11,6 +11,11 @@ import { ADMIN_ROUTE, LOGIN_ROUTE } from "../utils/constants";
 const NavBarComponent = observer(() => {
   const { user } = useContext(Context);
   const history = useHistory();
+
+  const logOut = () => {
+    user.setUser({});
+    user.setIsAuth(false);
+  };
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
@@ -18,18 +23,17 @@ const NavBarComponent = observer(() => {
         <Nav className="mr-auto">
           {user.isAuth ? (
             <>
-              {" "}
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Admin</Nav.Link>
-              <Nav.Link href="#pricing">Login</Nav.Link>
-            </>
-          ) : (
-            <>
               <Button variant="light" onClick={() => history.push(ADMIN_ROUTE)}>
                 Admin
               </Button>
-              <Button variant="light" onClick={() => history.push(LOGIN_ROUTE)}>
+              <Button variant="light" onClick={() => logOut()}>
                 Sign Out
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button variant="light" onClick={() => history.push(LOGIN_ROUTE)}>
+                Sign In
               </Button>
             </>
           )}
