@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Anastasiia Bichurina\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-multi-carousel
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;c:\Program Files\Microsoft SQL Server\130\Tools\Binn\;c:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Anastasiia Bichurina\.windows-build-tools\python27\;C:\Users\Anastasiia Bichurina\AppData\Local\Microsoft\WindowsApps;C:\Users\Anastasiia Bichurina\.dotnet\tools;C:\Users\Anastasiia Bichurina\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Anastasiia Bichurina\AppData\Local\GitHubDesktop\bin;C:\Users\Anastasiia Bichurina\AppData\Roaming\npm;C:\Program Files\PostgreSQL\13\bin;
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Anastasiia Bichurina\projects\microsoft-store\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node'
+
+npm manifest: 
+  {
+    "name": "microsoft-store",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "serve": "nodemon index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.0.1",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "express-fileupload": "^1.2.1",
+      "jsonwebtoken": "^8.5.1",
+      "pg": "^8.5.1",
+      "pg-hstore": "^2.3.3",
+      "sequelize": "^6.6.2",
+      "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.7"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
